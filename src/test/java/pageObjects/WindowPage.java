@@ -58,7 +58,7 @@ public class WindowPage {
         BaseClass.getDriver().close();
     }
 
-    public void switchingtoFirstWindow() {
+    public void switchingtoFirstWindow() throws InterruptedException {
         BaseClass.getDriver().switchTo().window(firstWindowID);
         input.sendKeys("Sumaia");
         BaseClass.getDriver().close();
